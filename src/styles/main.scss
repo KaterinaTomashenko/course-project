@@ -155,7 +155,7 @@
 				border: none;
 				color: white;
 				cursor: pointer;
-				transition: 2s;
+				transition: 1s;
 			}
 			.box-text__button:hover {
 				font-size: 1.7rem;
@@ -173,6 +173,7 @@
 		display: grid;
 		grid-template-rows: repeat(2, 200px);
 		gap: 100px;
+		
 		grid-template-areas:
 			"title		card-two"
 			"card-one	.		"
@@ -182,6 +183,7 @@
 			cursor: default;
 		}
 		.box__card-one {
+			margin-left: 80px;
 			grid-area: card-one;
 			justify-self: end;
 		}
@@ -348,7 +350,7 @@
 				"b c";
 
 			.project-one {
-				// grid-area: a;
+				grid-area: a;
 
 				width: 100%;
 				height: 417px;
@@ -479,11 +481,12 @@
 }
 .clients {
 	margin-top: 190px;
+	
 	background: #5a98d0;
 	border-radius: 200px 0 0 0;
 	display: flex;
 	justify-content: center;
-	$__container {
+	&__container {
 		padding-top: 95px;
 		.box-text {
 			display: flex;
@@ -516,8 +519,8 @@
 			display: grid;
 			gap: 1px;
 			grid-template-areas:
-				"1 2 3  4"
-				"5 6 7 8";
+				"a b c d"
+				"e f g h";	
 			div {
 				width: 235px;
 				height: 130px;
@@ -533,6 +536,162 @@
 			}
 			div:hover {
 				background: rgb(31, 63, 104);
+			}
+		}
+	}
+}
+.connection {
+	background: #5A98D0;
+	&__container {
+		background: #316099;
+		margin-right: 95px;
+		border-radius:  0 200px 0 0;
+		display: flex;	
+		justify-content: center;
+		gap: 180px;
+.box-text {
+	margin-bottom: 95px;
+	cursor:default;
+	h2 {
+		color: #FFFFFF;
+		letter-spacing: 0.05em;
+		font-size: 36px;
+		line-height: 46px;
+		width: 315px;
+		height: 90px;
+		margin-top: 90px;
+	}
+	p {
+		width: 460px;
+		height: 80px;
+		color: #FFFFFF;
+		letter-spacing: 0.05em;
+		font-size: 16px;
+		line-height: 26px;
+		opacity: 0.6;
+		margin-top: 30px;
+	}
+}
+	button {
+		color: #FFFFFF;
+		text-align: center;
+		letter-spacing: 0.04em;
+		font-size: 16px;
+		line-height: 26px;
+		background: #5A98D0;
+		border-radius: 10px;
+		width: 220px;
+		height: 55px;
+		border: none;
+		margin-top: 165px;
+		// margin-right: 150px;
+		transition: 1s;
+		cursor: pointer;
+
+	}	
+	button:hover {
+		font-size: 1.7rem;
+				box-shadow: 15px 20px 30px rgba(19, 48, 86, 0.651);
+	}
+}
+	hr {
+		width: 50%;
+		position: absolute;
+		
+	}
+}
+.footer {
+	background: #5A98D0;
+	
+	&__container {
+		background: #316099;
+		margin-right: 95px;	
+
+	
+		display: grid;
+		grid-template-columns: 330px 160px 100px;
+		justify-content: center;
+		gap: 80px ;
+		grid-template-areas:	"a b c";
+		.about-us {
+			grid-area: b;
+		}
+		.social {
+			grid-area: c;
+		}
+		.box {
+			grid-area: a;
+
+			.footer__logo {
+				padding-top: 95px;
+				display: flex;
+				gap: 15px;
+				cursor:default;
+	
+				h2 {
+						color: #FFFFFF;
+						letter-spacing: 0.02em;
+						font-size: 28px;
+						line-height: 46px;
+						width: 125px;
+						height: 45px;
+				}
+			}
+			.contacts {
+				margin-top: 30px;
+				cursor:default;
+	
+				div {
+					display: flex;
+					gap: 15px;
+					h4 {
+						color: #ffffff;
+						letter-spacing: 0.05em;
+						font-size: 16px;
+						line-height: 26px;
+					}
+					p {
+						color: #FFFFFF;
+						letter-spacing: 0.05em;
+						font-size: 16px;
+						line-height: 26px;
+						width: 265px;
+						margin-bottom: 25px;
+					}
+	
+				}
+			}
+			.copy {
+				color: #FFFFFF;
+				letter-spacing: 0.05em;
+				font-size: 16px;
+				line-height: 26px;
+				cursor:default			;
+				opacity: 0.4;
+				margin-top: 40px;
+				padding-bottom: 65px;
+	
+			}
+		}
+		.about-us,
+		.social {
+			padding-top: 95px;
+			cursor:default;
+			h3 {
+				color: #ffffff;
+				letter-spacing: 0.05em;
+				font-size: 20px;
+				line-height: 30px;
+				margin-bottom: 30px;
+			}
+			ul{
+				li {
+					color: #FFFFFF;
+					letter-spacing: 0.05em;
+					font-size: 16px;
+					line-height: 26px;
+					margin-bottom: 15px;
+				}
 			}
 		}
 	}
