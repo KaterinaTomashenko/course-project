@@ -1,0 +1,26 @@
+@mixin logo {
+	height: 32px;
+	width: 32px;
+	border-radius: 100%;
+}
+@mixin button {
+	width: 220px;
+	height: 55px;
+	background: #5a98d0;
+	border-radius: 10px;
+	border: none;
+	color: #ffffff;
+	text-align: center;
+}
+@mixin subtitle {
+	font-family: $Gilroy;
+	font-size: 16px;
+	line-height: 26px;
+	letter-spacing: 0.05em;
+}
+@mixin title {
+	font-family: $Gilroy;
+	font-size: 36px;
+	line-height: 46px;
+	letter-spacing: 0.05em;
+}

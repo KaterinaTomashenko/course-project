@@ -14,12 +14,14 @@
 	<body>
 		<header class="header">
 			<div class="header__container">
-				<div class="logo">
-					<div class="logo-back"></div>
-					<div class="logo-front">
-						<div class="logo-front__letter">A</div>
+				<a href="index.html">
+					<div class="logo">
+						<div class="logo-back"></div>
+						<div class="logo-front">
+							<div class="logo-front__letter">A</div>
+						</div>
 					</div>
-				</div>
+				</a>
 				<nav class="menu">
 					<input type="checkbox" id="checkbox" class="menu__checkbox" />
 					<label for="checkbox" class="menu__btn"
@@ -29,16 +31,16 @@
 					<div class="menu__box">
 						<ul class="menu__list">
 							<li class="menu__item">
-								<a href="#" class="menu__link">About</a>
+								<a href="#activity" class="menu__link">About</a>
 							</li>
 							<li class="menu__item">
-								<a href="#" class="menu__link">What We Do</a>
+								<a href="#activity" class="menu__link">What We Do</a>
 							</li>
 							<li class="menu__item">
-								<a href="#" class="menu__link">Project</a>
+								<a href="#project" class="menu__link">Project</a>
 							</li>
 							<li class="menu__item">
-								<a href="#" class="menu__link">How It Work With Us</a>
+								<a href="#connection" class="menu__link">How It Work With Us</a>
 							</li>
 						</ul>
 					</div>
@@ -54,13 +56,15 @@
 						tristique vulputate ultrices ut mauris tellus at. Posuere
 						sollicitudin odio tellus elit.
 					</p>
-					<button class="box-text__button">See Our Project</button>
+					<a href="index.html">
+						<button class="box-text__button">See Our Project</button>
+					</a>
 				</div>
 
 				<img src="./assets/img/intro/intro-1.png" alt="picture" />
 			</div>
 		</section>
-		<section class="activity">
+		<section class="activity" id="activity">
 			<div class="activity__container">
 				<div class="activity__container__title">
 					<h2>What we do to help our client grow in digital era,</h2>
@@ -106,7 +110,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="project">
+		<section class="project" id="project">
 			<div class="project__container">
 				<div class="box-text">
 					<h2>Our Finished Project</h2>
@@ -160,7 +164,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="connection">
+		<section class="connection" id="connection">
 			<div class="connection__container">
 				<div class="box-text">
 					<h2>Intersted to woek with our team?</h2>
@@ -170,55 +174,74 @@
 						labore et dolore magna aliqua. Ut enim ad minim veniam.
 					</p>
 				</div>
+				<a href="index.html" target="_blank">
 					<button>Let’s Talk</button>
+				</a>
 			</div>
-			<hr>
+			<hr />
 		</section>
 		<footer class="footer">
 			<div class="footer__container">
 				<div class="box">
 					<div class="footer__logo">
-						<img src="./assets/img/footer/logo.png" alt="logo">
-						<h2>Afrianska</h2>
+						<img src="./assets/img/footer/logo.png" alt="logo" />
+						<a href="index.html"><h2>Afrianska</h2></a>
 					</div>
 					<div class="contacts">
-					<div>
-						<h4>A.</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+						<div>
+							<h4>A.</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+						</div>
+						<div>
+							<h4>T.</h4>
+							<a href="tel:+62-812-7313-4321" class="_click"
+								>+62-812-7313-4321</a
+							>
+						</div>
+						<div>
+							<h4>E</h4>
+							<a href="mailto:hello.afrian@gmail.com" class="_click"
+								>hello.afrian@gmail.com</a
+							>
+						</div>
 					</div>
-					<div>
-						<h4>T.</h4>
-						<p>+62-812-7313-4321</p>
-					</div>
-					<div>
-						<h4>E</h4>
-						<p>hello.afrian@gmail.com</p>
-					</div>
+					<div class="copy">2019 © Afrianska. All rights reserved.</div>
 				</div>
-			<div class="copy" >2019 © Afrianska. All rights reserved.</div>
+				<div class="about-us">
+					<h3>About US</h3>
+					<ul>
+						<a href="#activity">
+							<li>About</li>
+						</a>
+						<a href="#activity">
+							<li>What We Do</li>
+						</a>
+						<a href="#project">
+							<li>Project</li>
+						</a>
+						<a href="#connection">
+							<li>How It Work With Us</li>
+						</a>
+					</ul>
 				</div>
-			<div class="about-us">
-				<h3>About US</h3>
-				<ul>
-					<li>About</li>
-					<li>What We Do</li>
-					<li>Project</li>
-					<li>How It Work With Us</li>
-				</ul>
+				<div class="social">
+					<h3>Follow US</h3>
+					<ul>
+						<a href="https://www.instagram.com/" target="_blank">
+							<li>Instagram</li>
+						</a>
+						<a href="https://www.facebook.com/" target="_blank">
+							<li>Facebook</li>
+						</a>
+						<a href="https://www.linkedin.com/" target="_blank">
+							<li>LinkedIn</li>
+						</a>
+						<a href="https://www.youtube.com/" target="_blank">
+							<li>Youtube</li>
+						</a>
+					</ul>
+				</div>
 			</div>
-			<div class="social">
-				<h3>Follow US</h3>
-				<ul>
-					<li>Instagram</li>
-					<li>Facebook</li>
-					<li>LinkedIn</li>
-					<li>Youtube</li>
-				</ul>
-			</div>
-
-		</div>
-
-			
 		</footer>
 	</body>
 </html>
