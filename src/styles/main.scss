@@ -465,7 +465,6 @@
 			.project-one:hover {
 				background-image: url(../assets/img/project/project-1.png);
 			}
-
 			.project-two {
 				grid-area: b;
 
@@ -510,7 +509,6 @@
 			.project-two:hover {
 				background-image: url(../assets/img/project/project-2.png);
 			}
-
 			.project-three {
 				grid-area: c;
 
@@ -594,7 +592,7 @@
 				"a b c d"
 				"e f g h";
 			div {
-				width: 235px;
+				width: 100%;
 				height: 130px;
 				font-family: $Gilroy;
 				font-size: 20px;
