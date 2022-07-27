@@ -368,4 +368,96 @@
 	}
 }
 @media (max-width: 375px) {
+	.intro {
+		// padding-top: 30px;
+		&__container {
+			.box-text {
+				&__title {
+					font-size: 27px;
+					line-height: 5rem;
+				}
+				&__subtitle {
+					font-size: 14px;
+				}
+			}
+			._picture {
+				margin-top: 100px;
+				height: 180px;
+				width: 250px;
+				opacity: 0.1;
+			}
+		}
+	}
+	.activity {
+		&__container {
+			grid-template-rows: repeat(1, 150px);
+			.activity__container__title {
+				font-size: 18px;
+				padding-left: 50px;
+			}
+		}
+	}
+	.project {
+		&__container {
+			.box-text {
+				h2 {
+					font-size: 25px;
+				}
+				p {
+					width: 300px;
+				}
+			}
+
+			.box-projects {
+				grid-template-columns: 300px;
+
+				.project-one,
+				.project-two,
+				.project-three {
+					width: 95%;
+					height: 300px;
+					div h3 {
+						font-size: 20px;
+					}
+				}
+			}
+		}
+	}
+	.clients {
+		border-radius: 80px 0 0 0;
+		&__container {
+			padding-top: 65px;
+			.box-text {
+				gap: 70px;
+				h2 {
+					font-size: 25px;
+				}
+				p {
+					width: 300px;
+				}
+			}
+			.table {
+				margin-top: 70px;
+				grid-template-areas:
+					"a b "
+					" c d"
+					"e f"
+					" g h";
+				margin-bottom: 80px;
+				div {
+				}
+			}
+		}
+	}
+	.connection {
+		&__container {
+			margin-right: 0px;
+			border-radius: 0 80px 0 0;
+		}
+	}
+	.footer {
+		&__container {
+			margin-right: 0px;
+		}
+	}
 } ;
