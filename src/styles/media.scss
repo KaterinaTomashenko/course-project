@@ -301,8 +301,71 @@
 		}
 	}
 }
-
 @media (max-width: 480px) {
+	.intro {
+		padding-top: 30px;
+		&__container {
+			.box-text {
+				&__title {
+					font-size: 35px;
+				}
+			}
+			._picture {
+				height: 300px;
+				width: 350px;
+			}
+		}
+	}
+	.activity {
+		&__container {
+			grid-template-rows: repeat(1, 150px);
+			.activity__container__title {
+				font-size: 20px;
+				padding-left: 30px;
+			}
+		}
+	}
+	.clients {
+		&__container {
+			.box-text {
+				p {
+					width: 350px;
+				}
+			}
+		}
+	}
+	.connection {
+		&__container {
+			.box-text {
+				margin-left: 40px;
+				h2 {
+					font-size: 30px;
+				}
+				p {
+					width: 300px;
+				}
+			}
+			button {
+				margin-bottom: 70px;
+			}
+		}
+	}
+	.footer {
+		&__container {
+			grid-template-columns: 200px;
+			.about-us,
+			.social {
+				padding-top: 65px;
+				li:hover {
+					font-size: 16px;
+				}
+			}
+			.box {
+				.footer__logo {
+				}
+			}
+		}
+	}
 }
 @media (max-width: 375px) {
 } ;
