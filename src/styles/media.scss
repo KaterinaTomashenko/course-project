@@ -95,7 +95,7 @@
 	.intro {
 		padding-left: 80px;
 		padding-bottom: 120px;
-	padding-top: 50px;
+		padding-top: 50px;
 
 		.box-text {
 			&__title {
@@ -218,8 +218,90 @@
 	}
 }
 @media (max-width: 600px) {
+	.header {
+		&__container {
+			.menu {
+				&__box {
+					overflow: scroll;
+				}
+				&__list {
+					flex-direction: column;
+				}
+				&__item {
+					font-size: 20px;
+				}
+			}
+		}
+	}
+	.intro {
+		&__container {
+			.box-text {
+				&__title {
+					font-size: 50px;
+					line-height: 6rem;
+				}
+				&__subtitle {
+					opacity: 1;
+					font-size: 20px;
+				}
+			}
 
+			._picture {
+				position: absolute;
+				z-index: -1;
+				opacity: 0.3;
+				height: 400px;
+				width: 450px;
+			}
+		}
+	}
+	.project {
+		&__container {
+			.box-text {
+				p {
+					width: 400px;
+				}
+			}
+		}
+	}
+	.clients {
+		&__container {
+			.box-text {
+				p {
+					width: 400px;
+				}
+			}
+			.table {
+				margin-top: 50px;
+				div {
+					font-size: 10px;
+					height: 100%;
+				}
+			}
+		}
+	}
+	.connection {
+		&__container {
+			.box-text {
+				p {
+					width: 330px;
+					margin-bottom: 50px;
+				}
+			}
+		}
+	}
+	.footer {
+		&__container {
+			gap: 0;
+			.box {
+				.footer__logo {
+					padding-top: 50px;
+				}
+			}
+		}
+	}
 }
+
 @media (max-width: 480px) {
 }
 @media (max-width: 375px) {
